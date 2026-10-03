@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gatos, Tucanos e Passarinhos</title>
+
+    <style>
+        /* Estilo geral da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f3e9;
+            color: #234332;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #234332;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Menu */
+        nav {
+            background-color: #d9a52e;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: #234332;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Banner principal */
+        .inicio {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .inicio img {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+        }
+
+        .inicio h2 {
+            font-size: 30px;
+        }
+
+        /* Seções */
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #234332;
+        }
+
+        /* Imagens dos animais */
+        .animais {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .animal {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #00000015;
+        }
+
+        .animal img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .animal h3 {
+            color: #b47b13;
+        }
+
+        /* Seção de cuidados */
+        .cuidados {
+            background-color: #e4eadb;
+        }
+
+        /* Botão */
+        .botao {
+            display: inline-block;
+            background-color: #d9a52e;
+            color: #234332;
+            padding: 12px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .botao:hover {
+            background-color: #efc65d;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #234332;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Ajuste para celulares */
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 6px;
+            }
+
+            .inicio img {
+                width: 100%;
+            }
+
+            .animal {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>🐱 Gatos, Tucanos e Passarinhos 🐦</h1>
+        <p>Um mundo cheio de animais e natureza!</p>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#animais">Animais</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#cuidados">Cuidados</a>
+    </nav>
+
+    <!-- Início -->
+    <section id="inicio" class="inicio">
+        <h2>Bem-vindo ao mundo dos animais!</h2>
+
+        <p>
+            Aqui você vai conhecer um pouco mais sobre
+            os gatos, os tucanos e os passarinhos.
+        </p>
+
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=800&q=80"
+            alt="Gato olhando para a câmera">
+
+        <p>
+            Cada animal é especial e merece nosso
+            carinho, respeito e proteção.
+        </p>
+
+        <a href="#animais" class="botao">
+            Conheça os animais
+        </a>
+    </section>
+
+    <!-- Animais -->
+    <section id="animais">
+        <h2>Conheça os animais</h2>
+
+        <div class="animais">
+
+            <!-- Gato -->
+            <div class="animal">
+                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=500&q=80"
+                    alt="Gato">
+
+                <h3>🐱 Gatos</h3>
+
+                <p>
+                    Os gatos são animais curiosos,
+                    inteligentes e brincalhões.
+                    Eles precisam de alimentação,
+                    carinho e cuidados.
+                </p>
+            </div>
+
+            <!-- Tucano -->
+            <div class="animal">
+                <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?auto=format&fit=crop&w=500&q=80"
+                    alt="Ave de cores vibrantes">
+
+                <h3>🦜 Tucanos</h3>
+
+                <p>
+                    Os tucanos são aves conhecidas
+                    por seus bicos grandes e coloridos.
+                    Eles vivem em ambientes naturais
+                    e se alimentam principalmente de frutos.
+                </p>
+            </div>
+
+            <!-- Passarinho -->
+            <div class="animal">
+                <img src="https://images.unsplash.com/photo-1444464666168-49d633b86797?auto=format&fit=crop&w=500&q=80"
+                    alt="Passarinho em um galho">
+
+                <h3>🐦 Passarinhos</h3>
+
+                <p>
+                    Os passarinhos possuem diferentes
+                    cores e cantos. Muitos ajudam
+                    a espalhar sementes e contribuem
+                    para o equilíbrio da natureza.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades">
+        <h2>Você sabia?</h2>
+
+        <p>Confira algumas curiosidades sobre os animais!</p>
+
+        <p>🐱 Os gatos possuem uma audição muito aguçada.</p>
+
+        <p>🦜 Os tucanos possuem bicos grandes e leves.</p>
+
+        <p>🐦 Muitas aves usam o canto para se comunicar.</p>
+    </section>
+
+    <!-- Cuidados -->
+    <section id="cuidados" class="cuidados">
+        <h2>Como cuidar dos animais?</h2>
+
+        <p>
+            Todos os animais merecem respeito e proteção.
+            Podemos ajudar oferecendo cuidados adequados
+            aos animais domésticos e protegendo a natureza.
+        </p>
+
+        <p>
+            Lembre-se: gatos podem caçar aves.
+            Por isso, mantenha os gatos em ambientes
+            seguros e evite o contato com pássaros silvestres.
+        </p>
+
+        <a href="#inicio" class="botao">
+            Voltar ao início
+        </a>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>🐾 Gatos, Tucanos e Passarinhos</p>
+
+        <p>Amor, respeito e cuidado com os animais.</p>
+
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
